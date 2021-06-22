@@ -1,5 +1,5 @@
 /* GLOBAL */
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600;700;900&family=Fraunces:wght@700;900&display=swap');
 
 * {
     margin: 0;
@@ -27,7 +27,7 @@ html {
     --very-dark-desaturated-blue: hsl(212, 27%, 19%);
     --very-dark-grayish-blue: hsl(213, 9%, 39%);
     --dark-grayish-blue: hsl(232, 10%, 55%);
-    --grayish-blue: hsl(210, 4%, 67%);
+    --grayish-blue: hsl(206, 4%, 67%);
     --white: hsl(0, 0%, 100%);
     /* font-family: 'Fraunces', serif;  */
 }
@@ -43,8 +43,8 @@ p {margin-bottom: 1rem;}
 
 h1, h2, h3, h4, h5 {
   margin: 3rem 0 1.38rem;
-  font-family: 'Barlow', sans-serif;
-  font-weight: 600;
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
   line-height: 1.3;
 }
 
@@ -101,6 +101,84 @@ a {
 /* DESKTOP */
 
 /* 1. NAVBAR DESKTOP*/
+.main-header {
+    background-image: url('./images/desktop/image-header.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.main-header h1 {
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--white);
+    letter-spacing: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+}
+
+.logo {
+    flex: 1 1 60rem;
+    color: var(--white);
+    font-size: var(--header3);
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+    margin-left: 3rem;
+}
+
+.nav-bar{
+    flex: 1 1 40rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-bar a {
+    color: white;
+    font-size: 1.2rem;
+    padding: 1.2rem 2rem;
+    border-radius: 5rem;
+}
+
+.nav-bar a:hover {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    
+    text-transform: uppercase;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+
+.nav-bar a:focus {
+    color: black;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    margin: 5rem 0;
+}
+
+.hero img {
+    width: auto;
+    height: 150px;
+}
+
+
+
+
+
 
 /* 2. HERO  DESKTOP*/
 
@@ -114,15 +192,39 @@ a {
 
 
 /* MOBILE */
-@media screen (max-width: 1024px) {
+/* @media screen (max-width: 1024px) {
     
-}
+} */
 
 @media screen (max-width: 768px) {
-    
+    /* 1. NAVBAR MOBILE*/
+.main-header {
+
 }
 
-/* 1. NAVBAR MOBILE*/
+nav {
+
+}
+
+.hero {
+
+}
+
+.logo {
+
+}
+
+.nav-bar{
+
+}
+
+.nav-bar li {
+
+}
+
+.nav-bar a {
+
+}
 
 /* 2. HERO  MOBILE*/
 
@@ -133,3 +235,6 @@ a {
 /* 5. IMAGES BAR MOBILE*/
 
 /* 6. FOOTER MOBILE*/
+
+}
+
