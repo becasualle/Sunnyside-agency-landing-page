@@ -1,0 +1,135 @@
+/* GLOBAL */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 112.5%;
+
+    --header1: 4.209rem;
+    --header2: 3.157rem;
+    --header3: 2.369rem;
+    --header4: 1.777rem;
+    --header5: 1.333rem;
+    --text: 1rem;
+    --big: 5.61rem;
+    --small: 0.75rem;
+
+    --soft-red: hsl(7, 99%, 70%);
+    --yellow: hsl(51, 100%, 49%);
+    --graphic-design-text: hsl(167, 40%, 24%);
+    --photography-text: hsl(198, 62%, 26%);
+    --footer: hsl(168, 34%, 41%);
+    --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+    --very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --dark-grayish-blue: hsl(232, 10%, 55%);
+    --grayish-blue: hsl(210, 4%, 67%);
+    --white: hsl(0, 0%, 100%);
+    /* font-family: 'Fraunces', serif;  */
+}
+
+body {
+    background: white;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    line-height: 1.75;
+}
+
+p {margin-bottom: 1rem;}
+
+h1, h2, h3, h4, h5 {
+  margin: 3rem 0 1.38rem;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: var(--header1);
+}
+
+h2 {
+    font-size: var(--header2);
+}
+
+h3 {
+    font-size: var(--header3);
+}
+
+h4 {
+    font-size: var(--header4);
+}
+
+h5 {
+    font-size: var(--header5);
+}
+
+li,
+button,
+label,
+input,
+a,
+p {
+    font-size: var(--text);
+}
+
+small {
+    font-size: var(--small);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* DESKTOP */
+
+/* 1. NAVBAR DESKTOP*/
+
+/* 2. HERO  DESKTOP*/
+
+/* 3. FEATURES DESKTOP*/
+
+/* 4. TESTIMONIALS DESKTOP*/
+
+/* 5. IMAGES BAR DESKTOP*/
+
+/* 6. FOOTER DESKTOP*/
+
+
+/* MOBILE */
+@media screen (max-width: 1024px) {
+    
+}
+
+@media screen (max-width: 768px) {
+    
+}
+
+/* 1. NAVBAR MOBILE*/
+
+/* 2. HERO  MOBILE*/
+
+/* 3. FEATURES MOBILE*/
+
+/* 4. TESTIMONIALS MOBILE*/
+
+/* 5. IMAGES BAR MOBILE*/
+
+/* 6. FOOTER MOBILE*/
