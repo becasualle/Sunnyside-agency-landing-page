@@ -114,6 +114,7 @@ a {
     text-align: center;
     color: var(--white);
     letter-spacing: 1rem;
+    margin: 5rem 0;
 }
 
 nav {
@@ -121,21 +122,30 @@ nav {
     justify-content: space-between;
     align-items: center;
     height: 15vh;
+    position: relative;
 }
 
 .logo {
-    flex: 1 1 60rem;
-    color: var(--white);
-    font-size: var(--header3);
-    font-weight: 900;
-    letter-spacing: 0.1rem;
-    margin-left: 3rem;
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: flex-start;
+    margin-left: 5vw;
+}
+
+.logo img {
+    height: 2rem;
+    width: auto;
+}
+
+.burger-menu {
+    display: flex;
+    justify-content: center;
 }
 
 .nav-bar{
     flex: 1 1 40rem;
     display: flex;
-    justify-content: space-evenly;
+   justify-content: space-evenly;
 }
 
 .nav-bar a {
@@ -165,10 +175,6 @@ nav {
     align-items: center;
 }
 
-.hero h1 {
-    margin: 5rem 0;
-}
-
 .hero img {
     width: auto;
     height: 150px;
@@ -192,27 +198,44 @@ nav {
 
 /* MOBILE */
 @media screen and (max-width: 1024px) {
+    .burger-menu{
+        margin-right: 5vw;
+    }
+    
     #hamburger {
         display: block;
-        margin-right: 3rem;
-        position: relative;
+        width: 2rem;
+        height: auto;
         cursor: pointer;
     }
-
+    
     .nav-bar {
         display: none;
     }
-
+/*     
     .nav-bar.open {
         display: block;
         position: absolute;
         background-color: white;
-        top: 15%;
-        left: 50%;
-        margin-left: -44vw;
+        top: 17vh;
+        right: 5%;
         width: 90%;
         text-align: center;
         z-index: 2;
+    } */
+
+    .nav-bar.open {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: center;
+        background-color: white;
+        position: absolute;
+        top: 20vh;
+        right: 5vw;
+        left: 5vw;
+        padding: 2rem 0;
     }
 
     .nav-bar.open::after{
@@ -220,7 +243,6 @@ nav {
         position: absolute;
         bottom: 100%;
         right: 0%;
-        /* margin-left: 196px; */
         border-width: 1rem;
         border-style: solid;
         border-color: transparent;
@@ -229,13 +251,13 @@ nav {
     }
 
     .nav-bar.open li{
-        margin: 2rem 5rem;
+        margin: 1rem 0;
     }
 
     .nav-bar.open a{
-        color: var(--very-dark-desaturated-blue);
+        color: var(--very-dark-grayish-blue);
     }
-
+    
     .nav-bar a:hover {
         color: black;
         background-color: rgba(250, 212, 0, 0.8);
@@ -253,33 +275,16 @@ nav {
 
 @media screen and (max-width: 768px) {
     /* 1. NAVBAR MOBILE*/
-.main-header {
 
+.main-header h1 {
+
+    font-size: calc(1rem + 6vw);
+    color: var(--white);
+    letter-spacing: 0.5rem;
+    margin: 5rem 0;
 }
 
-nav {
 
-}
-
-.hero {
-
-}
-
-.logo {
-
-}
-
-.nav-bar{
-
-}
-
-.nav-bar li {
-
-}
-
-.nav-bar a {
-
-}
 
 /* 2. HERO  MOBILE*/
 

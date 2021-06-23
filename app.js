@@ -3,4 +3,5 @@ const navbar = document.querySelector('.nav-bar');
 
 hamburger.addEventListener('click', () => {
     navbar.classList.toggle('open');
+    hamburger.classList.toggle('open');
 })
