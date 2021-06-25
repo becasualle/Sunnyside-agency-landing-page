@@ -24,6 +24,7 @@ html {
     --graphic-design-text: hsl(167, 40%, 24%);
     --photography-text: hsl(198, 62%, 26%);
     --footer: hsl(168, 34%, 41%);
+    --footer-bg: #90D4C5;
     --very-dark-desaturated-blue: hsl(212, 27%, 19%);
     --very-dark-grayish-blue: hsl(213, 9%, 39%);
     --dark-grayish-blue: hsl(232, 10%, 55%);
@@ -325,7 +326,50 @@ nav {
 }
 
 /* 6. FOOTER DESKTOP*/
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+    background-color: var(--footer-bg);
+}
 
+#footer-logo {
+    fill: var(--graphic-design-text);
+}
+
+.footer-logo {
+    margin-bottom: 1rem;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-links li {
+    padding: 0 1.5rem;
+}
+
+.footer-links a {
+    color: var(--footer);
+}
+
+
+.footer-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.footer-icons img {
+    margin: 0 1rem;
+}
 
 /* MOBILE */
 @media screen and (max-width: 1360px) {
@@ -515,4 +559,9 @@ nav {
 
 /* 6. FOOTER MOBILE*/
 
+    .footer-links li{
+        padding: 0 0 0 1rem;
+        text-align: center;
+    }
+}
 
