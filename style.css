@@ -207,6 +207,18 @@ nav {
     object-fit: cover;
 }
 
+.item-1 a:hover {
+    box-shadow: -5px 18px 1px -5px var(--yellow);
+    border: none;
+    border-radius: 10px;
+}
+
+.item-4 a:hover {
+    box-shadow: -5px 18px 1px -5px var(--soft-red);
+    border: none;
+    border-radius: 10px;
+}
+
 .txt-item {
     padding: 0 9.5vw;
     color: var(--very-dark-grayish-blue);
@@ -358,6 +370,10 @@ nav {
     color: var(--footer);
 }
 
+.footer-links a:hover {
+    color: white;
+}
+
 
 .footer-icons {
     display: flex;
@@ -367,9 +383,14 @@ nav {
     margin-top: 3rem;
 }
 
-.footer-icons img {
+.footer-icons svg {
     margin: 0 1rem;
 }
+
+.footer-icons svg:hover path{
+    fill: white;
+}
+
 
 /* MOBILE */
 @media screen and (max-width: 1360px) {
@@ -489,9 +510,8 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
-    /* 1. NAVBAR MOBILE*/
-    
-    /* 2. HERO  MOBILE*/
+
+    /* HERO  MOBILE*/
     .main-header h1 {
 
         font-size: calc(1rem + 6vw);
@@ -500,7 +520,7 @@ nav {
         margin: 5rem 0;
     }
 
-    /* 3. FEATURES MOBILE*/
+    /* FEATURES MOBILE*/
 
     .features-container {
         display: grid;
@@ -543,21 +563,21 @@ nav {
         grid-row: 2/3;
     }
 
-/* 4. TESTIMONIALS MOBILE*/
+    /* TESTIMONIALS MOBILE*/
 
     .testimonial-feedback {
         flex-direction: column;
         padding: 0.5rem;
     }
 
-/* 5. IMAGES BAR MOBILE*/
+    /* IMAGES BAR MOBILE*/
     .images-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
     }
 
-/* 6. FOOTER MOBILE*/
+    /* FOOTER MOBILE*/
 
     .footer-links li{
         padding: 0 0 0 1rem;
